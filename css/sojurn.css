@@ -1,0 +1,42 @@
+:root{
+    --r: 255;
+    --g: 0;
+    --b: 0;
+    --text-color: rgb(var(--r), var(--g), var(--b));
+    background: grey;
+}
+
+
+/* .container{
+    width: clamp(400px,50vw,800px);
+} */
+
+/**if we wanted to apply gradient to the h1 text we could use the following css, commented out for actual purposes..**/
+
+
+h2{
+    background: linear-gradient(to right, rgb(var(--b),var(--g),var(--b)), rgb(var(--b),var(--r),var(--b)));
+    background-clip: text;
+    color: transparent;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
+    width: 300px;
+    overflow-x:scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.card{
+    scroll-snap-align: center;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    flex-shrink: 0;
+    width: 300px;
+    background-color: white;
+    border-radius: 14px;
+    text-align: center;
+}
