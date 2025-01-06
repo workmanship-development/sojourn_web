@@ -4,5 +4,6 @@
     --b: 0;
     --text-color: rgb(var(--r), var(--g), var(--b));
     --global_background_color: #333;
+    font-family: "Averta CY W01 Bold";
 }
 
