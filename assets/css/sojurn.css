@@ -23,8 +23,30 @@ header {
    min-height: 60vh;
 }
 
-@media(max-width: 757.98px){
+/*adding a single column for content display on main page*/
+
+.singleCol{
+    max-width: 750px; /*wide enough to be readable to but not too wide as to cause eye strain*/
+   /* background-color: yellowgreen;*/
+}
+
+
+/* Adding in the footer */
+footer {
+    background-color: #3a3a3a;
+    color: white;
+}
+
+/* changing footer coloration to be white and when hovered over, a cool color instead of the default blue*/
+footer a {
+    color: white;
+}
+footer a:hoover {
+    color: #dfdfdf; 
+}
+@media(max-width: 767.98px){
     .color-overlay{
         min-height: 30vh ;
     }
 }
+

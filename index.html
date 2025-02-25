@@ -1,71 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<!--Custom CSS-->
-<link rel="stylesheet" href="assets/css/sojurn.css">
-    <title>Hello, world!</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Adding font awesome icons overall -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="assets/css/sojurn.css" />
+
+    <!-- Adding font awesome css for icons -->
+     <!--In title section, add an icon: directly adding cdn hosted fontawesome faicon as favcon-->
+    <link rel="icon" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/svgs/solid/house.svg">
+    <title>the "sojourn"</title>
   </head>
   <body>
     <div class="container">
-<nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container">
-        <a href="index.html" class="navbar-brand img-responsive">
-           <img src="./assets/imgs/sojurn_logo_flattened.png" alt="logo for sojurn">
-            
-            <span class="d-none">Sojurn Tiny House</span>
-        </a>
-        <button 
-        class="navbar-toggler"
-        type="button" 
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a href="index.html" class="navbar-brand img-responsive">
+            <img
+              src="./assets/imgs/sojurn_logo_flattened.png"
+              alt="logo for sojurn"
+            />
 
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+            <span class="d-none">Sojurn Tiny House</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto text-center">
-                
-                <li class="nav-item">
-                    <a href="#" class="nav-link">home</a>
-                </li>
-            
-                <li class="nav-item">
-                    <a href="#story" class="nav-link">story</a>
-                </li>
-            
-                <li class="nav-item">
-                    <a href="#book" class="nav-link">book</a>
-                </li>
-            
+              <li class="nav-item">
+                <a href="#" class="nav-link">home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#story" class="nav-link">story</a>
+              </li>
+
+              <li class="nav-item">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.airbnb.com/rooms/1277547156513435525" class="nav-link">book</a>
+              </li>
             </ul>
-            
+          </div>
         </div>
-    </div>
-</nav>
+      </nav>
     </div>
     <main>
-        <header style="background-image: url('./assets/imgs/cabin-3.JPG');">
-            <div class="color-overlay d-flex justify-content-center align-items-center">
-                <h1>Hello, world!</h1>
-            </div>
-        </header>
-    </main>
-   
+      <header style="background-image: url('./assets/imgs/cabin-3.JPG')">
+        <div
+          class="color-overlay d-flex justify-content-center align-items-center"
+        >
+          <h1>Hello, world!</h1>
+        </div>
+      </header>
 
+      <!--adding in the single column -->
+      <!--mx-auto adjust both sides margin x start and end or left and right, auto puts in the middle of page, using my-* adds spacing on top and bottom -->
+      <div class="singleCol mx-auto my-5">
+        <div class="container">
+          <h2 class="text-center">
+           Welcome to "the Sojourn"
+          </h2>
+          <p class="lead">
+            Explore this unique, rustic, yet somewhat scenic getaway in North, MS. The small, 
+            quaint space offers one queen size bed in the main bedroom and one sofa-bed (twin size) in the living room and kitchen area.
+          </p>
+
+          <p>
+           The Sojourn is an Amish built tiny house/cabin in rural North Mississippi, 
+           about a 17 minute ride away from the Oxford Square. 
+          </p>
+
+          <p>
+            It is unique in that it offers the opportunity to disconnect for better 
+            mental health while you travel: you will find no iOT, internet, nor TVs here, 
+            encouraging you to relax and enjoy a digital "disconnect" and experience life without tech for a while! 
+          </p>
+        </div>
+      </div>
+    </main>
+    <!--adding py-5 adds padding to top and bottom of element, in this case the footer, see below-->
+    <footer class="py-5">
+      <div class="d-flex flex-row justify-content-center">
+       <a href="www.twitter.com" class="me-3"><i class="fab fa-twitter"></i></a>
+       <a href="www.instagram.com" class="me-3"><i class="fab fa-instagram"></i></a>
+       <a href="https://www.airbnb.com/rooms/1277547156513435525"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="-32 0 512 512">
+        <path fill="#fff" d="M224 373.12c-25.24-31.67-40.08-59.43-45-83.18c-22.55-88 112.61-88 90.06 0c-5.45 24.25-20.29 52-45 83.18zm138.15 73.23c-42.06 18.31-83.67-10.88-119.3-50.47c103.9-130.07 46.11-200-18.85-200c-54.92 0-85.16 46.51-73.28 100.5c6.93 29.19 25.23 62.39 54.43 99.5c-32.53 36.05-60.55 52.69-85.15 54.92c-50 7.43-89.11-41.06-71.3-91.09c15.1-39.16 111.72-231.18 115.87-241.56c15.75-30.07 25.56-57.4 59.38-57.4c32.34 0 43.4 25.94 60.37 59.87c36 70.62 89.35 177.48 114.84 239.09c13.17 33.07-1.37 71.29-37.01 86.64m47-136.12C280.27 35.93 273.13 32 224 32c-45.52 0-64.87 31.67-84.66 72.79C33.18 317.1 22.89 347.19 22 349.81C-3.22 419.14 48.74 480 111.63 480c21.71 0 60.61-6.06 112.37-62.4c58.68 63.78 101.26 62.4 112.37 62.4c62.89.05 114.85-60.86 89.61-130.19c.02-3.89-16.82-38.9-16.82-39.58z" stroke-width="13" stroke="#fff" />
+      </svg></a>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
