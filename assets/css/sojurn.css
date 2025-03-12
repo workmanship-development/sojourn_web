@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 :root{
     --r: 255;
     --g: 0;
@@ -7,6 +8,18 @@
     font-family: "Averta CY W01 Bold";
 }
 
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
 .navbar-brand img{
     max-height: 100px;
     width: auto;
@@ -44,9 +57,52 @@ footer a {
 footer a:hoover {
     color: #dfdfdf; 
 }
+
+footer svg:hoover{
+    color: #1c19b4;
+}
 @media(max-width: 767.98px){
     .color-overlay{
         min-height: 30vh ;
     }
 }
 
+
+
+/** section for quote box **/
+/* blockquote {
+    border-left: none;
+}
+
+.quote-box {
+    overflow: hidden;
+    margin-top: 50px;
+    padding-top: -25px;
+    border-radius: 17px;
+    background-color: darkgrey;
+    color: white;
+    width: auto;
+    box-shadow: 2px 2px 2px 2px #e0e0e0;
+}
+
+.quotation-mark {
+    margin-top: 10px;
+    font-weight: bold;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.quote-text {
+font-size: 19px;
+margin-top: -50px;
+} */
+
+/** end of quote box section **/
+
+
+/** alt section for block quote **/
+.blockquote-footer footer {
+    background-color: none;
+
+}
+/** end section for block quote **/
